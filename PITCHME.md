@@ -36,16 +36,42 @@
 # why so long to resolve?
 - support supposed to be 24/7 but wasn't
 - support team growing, not experienced
-- support upgraded cluster with more memory but didn't initially identify cardinality issue
+- support upgraded cluster with more memory  but didn't initially identify cardinality issue
 - pretty much left to us find source of cardinality
-- we have limited visibility into influxdb
-- some of the few metrics broken
-- I had to write custom tooling
+- limited visibility into influxdb
 - data 2 weeks to expire
-- lots of data to drop, kept failing
 - avoiding causing more problems
 
 ---
+# what we did...
+- meetings with support engineer
+- kully had meeting with support manager
+- fixed likely culprits
+- waited...
+- wrote custom tooling
+- dropped offending measurement
+
+---
+# What's coming?
+- Co-monitoring dashboards for influxdb
+- and kapacitor (I've been asked for input from design team)
+- UK based 24/7 support (at some point)
+- influxdb support for monitoring cardinality
+- alerts on cardinality ( by us)
+
+---
+# the future
+- things getting better
+- keeping options open
+- monitor all the things!
+- keep cardinality low
+- keeping options open
+- use other tools when appropriate ( logging, Aws Kinesis with Athena)
+
+---
+# questions
+
+@crunchy
 
 👯👯👯
 
